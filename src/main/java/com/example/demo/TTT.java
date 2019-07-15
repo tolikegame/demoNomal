@@ -14,17 +14,13 @@ public class TTT {
         }
 
         for (int i = 0; i < list.size(); ++i) {
-//            if(list.get(i).equals(1)){
-//                count=1;
-//            }
             if(list.size()-1<i+1){
-                count+=1;
+                if(list.get(i).equals(1)){
+                    count+=1;
+                }
                 break;
             }
-            if (list.get(i).equals(list.get(i+1))) {
-//                if(list.get(i).equals(1)){
-//                    count+=1;
-//                }
+            if (list.get(i).equals(1) && list.get(i).equals(list.get(i+1))) {
                 count+=1;
             }
 
@@ -34,7 +30,7 @@ public class TTT {
 
     public static void main(String[] args) {
         TTT ttt = new TTT();
-        int[] nums={0};
+        int[] nums={1,0};
         //[1,0,1,1,0,1]
         int result = ttt.findMaxConsecutiveOnes(nums);
         System.out.println(result);

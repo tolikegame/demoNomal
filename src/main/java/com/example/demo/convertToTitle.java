@@ -61,7 +61,7 @@ public class convertToTitle {
 	
 	public static void main(String[] args) {
 		convertToTitle test = new convertToTitle();
-		int n=703;
+		int n=702;
 //        1 -> A
 //        2 -> B
 //        3 -> C

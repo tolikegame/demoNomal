@@ -3,16 +3,17 @@ package com.example.demo;
 public class transpose {
 
 	public int[][] transpose(int[][] A) {
-		int[][] B = new int[A.length][A[0].length];
-		if (A.length < A[0].length) {
-			B = new int[A[0].length][A.length];
-		}
+		int[][] B = new int[A[0].length][A.length];
+//		int[][] B = new int[A.length][A[0].length];
+//		if (A.length < A[0].length) {
+//			B = new int[A[0].length][A.length];
+//		}
 		for (int i = 0; i < A.length; i++) {
 			for (int j = 0; j < A[0].length; j++) {
-				if (A[0].length == 1) {
-					B[i][j] = A[i][j];
-					continue;
-				}
+//				if (A[0].length == 1) {
+//					B[i][j] = A[i][j];
+//					continue;
+//				}
 				B[j][i] = A[i][j];
 			}
 		}

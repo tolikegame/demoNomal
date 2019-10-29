@@ -24,5 +24,11 @@ public class Time {
 
         System.out.println("Timestamp ==>" + timestamp);
 
+
+        Date date2 = new Date();
+        Long dateLong2 = date.getTime();
+        System.out.println("前面加0 ==>"+String.format("%015d",dateLong2));
+        System.out.println(String.format("%09d",123));
+
     }
 }

@@ -102,6 +102,12 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-mail</artifactId>
         </dependency>
+<!--        openfire-rest_api-->
+        <dependency>
+        <groupId>org.igniterealtime</groupId>
+        <artifactId>rest-api-client</artifactId>
+        <version>1.1.4</version>
+        </dependency>
     </dependencies>
 
     <build>

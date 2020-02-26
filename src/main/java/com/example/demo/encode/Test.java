@@ -7,11 +7,22 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.io.UnsupportedEncodingException;
+import java.sql.Timestamp;
 import java.util.Base64;
+import java.util.Date;
 import java.util.Random;
+import java.util.UUID;
 
 public class Test {
     public static void main(String[] args) {
+
+        //UUID 亂數編碼
+        String generateUUID = UUID.randomUUID().toString().replace("-", "");
+        String generateUUID2 = UUID.randomUUID().toString();
+
+        Timestamp timestamp = new Timestamp(new Date().getTime());
+        System.out.println(timestamp);
+
 //        Base32 base32 = new Base32();
 //        System.out.println(base32.encodeAsString("8nz@^W3YP3UKE#ecKFLw".getBytes()));
 
